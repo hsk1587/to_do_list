@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>나의 할 일 목록</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1 class="app-title">📝 나의 할 일 목록</h1>
+
+    <div class="input-area">
+      <input
+        type="text"
+        id="todo-input"
+        class="todo-input"
+        placeholder="할 일을 입력하세요"
+      />
+      <button id="add-btn" class="add-btn">추가</button>
+    </div>
+
+    <div class="filter-area">
+      <button class="filter-btn active" data-filter="all">전체</button>
+      <button class="filter-btn" data-filter="active">진행중</button>
+      <button class="filter-btn" data-filter="completed">완료</button>
+    </div>
+
+    <ul id="todo-list" class="todo-list">
+      <!-- 할 일 항목이 여기에 추가됩니다 -->
+    </ul>
+
+    <div class="footer-area">
+      <p id="todo-count" class="todo-count"></p>
+      <button id="clear-completed-btn" class="clear-completed-btn">완료된 항목 삭제</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
